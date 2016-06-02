@@ -91,30 +91,7 @@
 
             <div class="row">
               <div class="container whiteBG">
-                    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                        <div class="col-xs-2">
-                            <img height="100" class="center-block" src="http://www.gas-elec.co.uk/images/GD_Provider-withID.jpg" alt="Our Green Deal Acreditacion number." />
-                        </div>
-                        <?php if($pId == 1 OR $pId == 14 OR $pId == 15){ ?>
-                        <div class="col-xs-2">
-                            <img height="50" class="center-block" src="http://www.gas-elec.co.uk/image/ConsumerCreditLicense.jpg" alt="Logo of the Consumer Credit Licence" />
-                        </div>
-
-                        <div class="col-xs-2">
-                            <img height="50" class="center-block" src="http://www.gas-elec.co.uk/image/ICO.jpg" alt="Logo of the Information Commissioner's Office" />
-                        </div>
-                        <?php } ?>
-                        <div class="col-xs-2">
-                            <img height="100" class="center-block" src="http://www.gas-elec.co.uk/images/Green-Deal-Logo-RGB-200px-height.jpg" alt="Logo of our green deal installer number" />
-                        </div>
-                        <div class="col-xs-2">
-                            <img height="100" class="center-block" src="http://www.gas-elec.co.uk/image/HPFLogo.jpg" alt="Logo of our green deal installer number" />
-                        </div>
-                        <div class="col-xs-2">
-                            <img height="100" class="center-block" src="http://www.gas-elec.co.uk/images/logo_established.png" alt="Logo of 20 years" />
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 text-right">
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 pull-right text-right">
                         <strong>Gas Elec Safety Systems Limited</strong><br />
                         The Old Bakery, 14b The Green,<br /> West Drayton, UB7 7PJ<br /> <strong>Tel:</strong> +44 (0)1895 420 777 |<br />
                         <strong>Fax:</strong> +44 (0)1895 420 776<br />
@@ -123,15 +100,6 @@
                     </div>
                 </div>
             </div>
-
-
-            <div class="row">
-              <div class="container whiteBG">
-                    <p>&copy; Copyright 2015 gas-<em>elec</em> group. All rights reserved<!-- br />
-                    Gas Safe Nbr. 171224</p -->
-                </div>
-            </div>
-
 
             <div class="row">
               <div class="container whiteBG">
