@@ -1,6 +1,6 @@
 <?php include "head.php"; ?>
 
-    <div class="col-xs-12 col-md-10">
+    <div class="col-xs-12 col-md-9">
       <?php
       if(isset($page['contentTitle'])){ ?>
         <h2>
@@ -67,7 +67,7 @@
           </ul>
         </nav>
     </div>
-    <div class="col-xs-12 col-md-2">
+    <div class="col-xs-12 col-md-3">
       <div class="sidebar-module">
         <h4>Completed Sections</h4>
         <ol class="list-unstyled">
@@ -86,6 +86,24 @@
           <?php } } ?>
         </ol>
       </div>
+      <div class="sidebar-module">
+  			<p>
+  				<strong>David Mooney</strong><br />
+  				5 Chapel View<br />
+  				Station Road<br />
+  				Turton<br />
+  				Bolton BL7 0LE<br />
+  				Tel: 07887 552 442
+  			</p>
+  		</div>
+
+      <div class="sidebar-module">
+  				<p>
+  						<?php if($_SERVER['PHP_SELF'] != "/terms.php"){ ?>
+  							<a href="terms.php">Terms and Conditions</a>
+  						<?php } ?>
+  				</p>
+  		</div>
     </div>
 
               <?php include 'footer.php'; ?>

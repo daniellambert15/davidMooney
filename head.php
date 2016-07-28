@@ -15,6 +15,18 @@
     <link href="CSS/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+<?php
+    $id = isset($_GET['id']) ? $_GET['id'] : 0;
+?>
+
+    <?php if($_SERVER['PHP_SELF'] == "/index.php" && $id < 1 ){ ?>
+      <style>
+        body{
+          background: url("../images/shutterstock_149841719_small.jpg");
+          background-repeat: no-repeat;;
+        }
+      </style>
+    <?php } ?>
 
     <script>
 

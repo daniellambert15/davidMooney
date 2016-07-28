@@ -11,22 +11,5 @@
 						<p class="seperator"></p>
 				</div>
 		</div>
-
-		<div class="col-xs-12">
-			<p>
-				<strong>David Mooney</strong><br />
-				5 Chapel View<br />
-				Station Road<br />
-				Turton<br />
-				Bolton BL7 0LE<br />
-				Tel: 07887 552 442
-			</p>
-		</div>
-
-		<div class="col-xs-12">
-				<p>
-						<a href="terms.php">Terms and Conditions</a>
-				</p>
-		</div>
 	</body>
 </html>

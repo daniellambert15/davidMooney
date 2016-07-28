@@ -32,7 +32,7 @@
 
 
 
-  if(isset($_POST['postEmail']) && isset($_POST['postEmailAddress']))
+  if(isset($_POST['postEmail']) && $_POST['postEmailAddress'] != "")
   {
     // set the email within the system.
     $introducer->setEmail($_POST['postEmailAddress']);
@@ -42,8 +42,10 @@
 
   if(!isset($_SESSION['email']))
   {
+
     $page = $introducer->content('email');
-  }elseif(isset($_GET['id']))
+
+  }elseif(isset($_GET['id']) && $_SESSION['email'] != "")
   {
     $page = $introducer->content($_GET['id']);
   }else{
@@ -71,5 +73,6 @@
   }
 
   include 'content.php';
+
 
 ?>

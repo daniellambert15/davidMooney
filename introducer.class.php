@@ -591,7 +591,7 @@ class fcaIntroducer{
   {
     $array = array(
       'contentTitle' => 'You have Completed',
-      'content' => '<p>Thank you for completing this. Please re type your email
+      'content' => '<p>Thank you for completing our questionnaire. Please re type your email
       and click the submit button. We\'ll then call you back asap.</p>',
       'buttonPreviousText' => 'Previous',
       'urlPrevious' => '14',
@@ -636,19 +636,18 @@ class fcaIntroducer{
   									<tr>
   										<td align="left" style="padding-right: 5px" valign="top">
   											<!-- CONTENT IN HERE -->
-  												<h1>New HPF Signup</h1>
+  												<h1>FCA Trainee</h1>
                           <p>
-                            The introducer has signed all of the pages. They used this email to start the session with:
+                            The trainee has signed all of the pages. They used this email to start the session with:
                             '.$_SESSION['email'].'
                           </p>
                           <p>Here are their details</p>
                           <ul>
-                          ';
-                          foreach ($_POST as $key => $value) {
-                              $message .= '<li><strong>'.$key.'</strong>: '.$value.'</li>
-                              ';
-                          }
-                        $message .=  '</ul>
+                          <li><strong>Name:</strong> '.$_POST['name'].'</li>
+                          <li><strong>Email:</strong> '.$_POST['email'].'</li>
+                          <li><strong>Contact Number:</strong> '.$_POST['contactNumber'].'</li>
+                          <li><strong>Address:</strong> '.$_POST['address'].'</li>
+                          </ul>
   											<!-- CONTENT END HERE -->
   										</td>
   									</tr>
