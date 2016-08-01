@@ -37,7 +37,7 @@ if(isset($_REQUEST['submit'])){
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Anti-Money Laundering Assessment</title>
+    <title>General Knowledge Assessment</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -52,7 +52,7 @@ if(isset($_REQUEST['submit'])){
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
-            <h2>Anti-Money Laundering Assessment</h2>
+            <h2>General Knowledge Assessment</h2>
         </div>
     </div>
 
