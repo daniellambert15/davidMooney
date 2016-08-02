@@ -20,19 +20,19 @@
 
         // its going to
         $email->to = "fcacomplianceservices@gmail.com";
-        //$email->to = "daniel.lambert@gas-elec.co.uk";
+//        $email->to = 'daniel.lambert@gas-elec.co.uk';
 
         // its coming from
         $email->from = "info@fcacomplianceservices.com";
 
         // set the title
-        $email->title = 'Treating Customers Fairly Assessment';
+        $email->title = 'Data Protection Act Assessment';
 
         // build the email
         $emailContent = '
         
         <ul>
-            <li>Question: 1) TCF is about</li>
+            <li>Question: 1) What year was the Data Protection Act first created?</li>
             <li>Answer: 
                 <ol>
                      <li>'.$_POST['1-1'].'</li>
@@ -43,7 +43,7 @@
         </ul>
         
         <ul>
-            <li>Question: 2) How many desired outcomes are there for TCF</li>
+            <li>Question: 2) What is the person in charge of data in an organisation called?  </li>
             <li>Answer: 
                 <ol>
                      <li>'.$_POST['2-1'].'</li>
@@ -54,12 +54,12 @@
         </ul>
         
         <ul>
-            <li>Question: 3) Whose logo is this?</li>
+            <li>Question: 3) What do the following initials stand for?</li>
             <li>Answer: '.$_POST['3'].'</li>
         </ul>
         
         <ul>
-            <li>Question: 4) TCF stands for?</li>
+            <li>Question: 4) How many Data Protection principles are there?</li>
             <li>Answer: 
                 <ol>
                      <li>'.$_POST['4-1'].'</li>
@@ -70,7 +70,7 @@
         </ul>
         
         <ul>
-            <li>Question: 5) Name 3 areas of your organisation where TCF should be applied</li>
+            <li>Question: 5) Name 3 countries outside of EEA who have an adequate level of protection rating by ICO?</li>
             <li>Answer: 
                 <ol>
                      <li>'.$_POST['5-1'].'</li>
@@ -81,18 +81,25 @@
         </ul>
         
         <ul>
-            <li>Question: 6) TCF is the practical realisation of one of the FCA’s core principles:</li>
-            <li>"A Firm must pay due regard to the interests of its customers and treat them fairly."</li>
-            <li>Answer: '.$_POST['6'].'</li>
+            <li>Question: 6) How many days do you have to respond to a Subject Access Request?</li>
+            <li>Answer: 
+                <ol>
+                     <li>'.$_POST['6-1'].'</li>
+                     <li>'.$_POST['6-2'].'</li>
+                     <li>'.$_POST['6-3'].'</li>
+                </ol>
+            </li>
         </ul>
         
         <ul>
-            <li>Question: 7) Fill in the blanks of Treating Customers Fairly Outcome 3</li>
-            <li>Answer: \'Consumers are provided with <strong>'.$_POST['7-1'].'</strong> information and kept appropriately <strong>'.$_POST['7-2'].'</strong> before, during and after the point of sale\'</li>
+            <li>Question: 7) Fill in the blanks of Data Protection Principle 3</li>
+            <li>Answer:
+                <p>Personal data shall be <strong>'.$_POST['7-1'].'</strong>, relevant and not <strong>'.$_POST['7-2'].'</strong> in relation to the purpose or purposes for which they are processed.</p>
+            </li>
         </ul>
         
         <ul>
-            <li>Question: 8) A customer raises a complaint with you. Do you:</li>
+            <li>Question: 8) Personal data is defined as:</li>
             <li>Answer: 
                 <ol>
                      <li>'.$_POST['8-1'].'</li>
@@ -103,19 +110,43 @@
         </ul>
         
         <ul>
-            <li>Question: 9) A customer asks who you are and what you do. Do you:</li>
+            <li>Question: 9) The Information Commissioners Office can award compensation for breaches?</li>
+            <li>Answer: '.$_POST['9'].'</li>
+        </ul>
+        
+        <ul>
+            <li>Question: 10) Which of the following are \'sensitive\' personal data? (pick one or more)</li>
             <li>Answer: 
                 <ol>
-                     <li>'.$_POST['9-1'].'</li>
-                     <li>'.$_POST['9-2'].'</li>
-                     <li>'.$_POST['9-3'].'</li>
+                     <li>'.$_POST['10-1'].'</li>
+                     <li>'.$_POST['10-2'].'</li>
+                     <li>'.$_POST['10-3'].'</li>
+                     <li>'.$_POST['10-4'].'</li>
+                     <li>'.$_POST['10-5'].'</li>
+                     <li>'.$_POST['10-6'].'</li>
                 </ol>
             </li>
         </ul>
         
         <ul>
-            <li>Question: 10) TCF is not applicable to my role and/or organisation?</li>
-            <li>Answer: '.$_POST['10'].'</li>
+            <li>Question: 11) You can charge up to £10.00 for a Subject Access Request?</li>
+            <li>Answer: '.$_POST['11'].'</li>
+        </ul>
+        
+        <ul>
+            <li>Question: 12) You are always legally obliged to release personal data to the police when requested?</li>
+            <li>Answer: '.$_POST['12'].'</li>
+        </ul>
+        
+        <ul>
+            <li>Question: 13) The 4th Data Protection Principle requires that personal data is accurate, and where it is deemed to be inaccurate, the individual concerned has the right to:</li>
+            <li>Answer: 
+                <ol>
+                     <li>'.$_POST['13-1'].'</li>
+                     <li>'.$_POST['13-2'].'</li>
+                     <li>'.$_POST['13-3'].'</li>
+                </ol>
+            </li>
         </ul>
         ';
 
@@ -138,7 +169,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Treating Customers Fairly Assessment</title>
+    <title>Data Protection Act Assessment</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -156,7 +187,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h2>Treating Customers Fairly Assessment</h2>
+                <h2>Data Protection Act Assessment</h2>
                 <p>
                     Please note: There may be more than one answer to some of the questions.
                 </p>
@@ -165,7 +196,7 @@
         <?php if($completed){ ?>
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="alert alert-success" role="alert">Thank you for taking part in this Treating Customers Fairly Assessment. You will be contacted shortly with the results.</div>
+                    <div class="alert alert-success" role="alert">Thank you for taking part in this Data Protection Act Assessment. You will be contacted shortly with the results.</div>
                 </div>
             </div>
         <?php } ?>
@@ -176,21 +207,21 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">Question 1:</div>
                         <div class="panel-body">
-                            <p><strong>TCF is about?</strong></p>
+                            <p><strong>What year was the Data Protection Act first created?</strong></p>
                             <ol>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="1-1" value="Creating satisfied customers."> Creating satisfied customers.
+                                        <input type="checkbox" name="1-1" value="1984"> 1984
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="1-2" value="Providing clear and transparent services or products to customers."> Providing clear and transparent services or products to customers.
+                                        <input type="checkbox" name="1-2" value="1988"> 1988
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="1-3" value="Treating every customer in the same way."> Treating every customer in the same way.
+                                        <input type="checkbox" name="1-3" value="1998"> 1998
                                     </label>
                                 </li>
                             </ol>
@@ -203,21 +234,21 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">Question 2:</div>
                         <div class="panel-body">
-                            <p><strong>How many desired outcomes are there for TCF?</strong></p>
+                            <p><strong>What is the person in charge of data in an organisation called?</strong></p>
                             <ol>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="2-1" value="5"> 5
+                                        <input type="checkbox" name="2-1" value="Data Controller"> Data Controller
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="2-2" value="8"> 8
+                                        <input type="checkbox" name="2-2" value="Data Subject"> Data Subject
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="2-3" value="6"> 6
+                                        <input type="checkbox" name="2-3" value="Data Processor"> Data Processor
                                     </label>
                                 </li>
                             </ol>
@@ -231,7 +262,7 @@
                         <div class="panel-heading">Question 3:</div>
                         <div class="panel-body">
                             <p><strong>Whose logo is this?</strong></p>
-                            <p><img class="img-responsive" src="../images/logo.jpg"></p>
+                            <p><img class="img-responsive" width="100" src="../images/ico-logo.jpg"></p>
                             <input type="text" name="3" class="form-control" placeholder="Whose is the above logo?">
                         </div>
                     </div>
@@ -242,21 +273,21 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">Question 4:</div>
                         <div class="panel-body">
-                            <p><strong>TCF stands for?</strong></p>
+                            <p><strong> How many Data Protection principles are there?  </strong></p>
                             <ol>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="4-1" value="Treating Consumers Fairly"> Treating Consumers Fairly
+                                        <input type="checkbox" name="4-1" value="6"> 6
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="4-2" value="Testing Customers Fairly"> Testing Customers Fairly
+                                        <input type="checkbox" name="4-2" value="8"> 8
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="4-3" value="Treating Customers Fairly"> Treating Customers Fairly
+                                        <input type="checkbox" name="4-3" value="9"> 9
                                     </label>
                                 </li>
                             </ol>
@@ -269,8 +300,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">Question 5:</div>
                         <div class="panel-body">
-                            <p><strong>Name 3 areas of your organisation where TCF should be applied</strong></p>
-
+                            <p><strong>Name 3 countries outside of EEA who have an adequate level of protection rating by ICO?</strong></p>
                             <div class="form-group">
                                 <label for="5-1">Answer 1</label>
                                 <input type="text" class="form-control" name="5-1">
@@ -292,13 +322,24 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">Question 6:</div>
                         <div class="panel-body">
-                            <p><strong>TCF is the practical realisation of one of the FCA’s core principles</strong></p>
-                            <p>"A Firm must pay due regard to the interests of its customers and treat them fairly."</p>
-                            <select class="form-control" name="6">
-                                <option value="Please Select" selected>-- PLEASE SELECT --</option>
-                                <option value="True">True</option>
-                                <option value="False">False</option>
-                            </select>
+                            <p><strong>How many days do you have to respond to a Subject Access Request?</strong></p>
+                            <ol>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="6-1" value="20"> 20
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="6-2" value="30"> 30
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="6-3" value="40"> 40
+                                    </label>
+                                </li>
+                            </ol>
                         </div>
                     </div>
                 </div>
@@ -308,8 +349,8 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">Question 7:</div>
                         <div class="panel-body">
-                            <p><strong>Fill in the blanks of Treating Customers Fairly Outcome 3</strong></p>
-                            <p>'Consumers are provided with <input type="text" name="7-1"> information and kept appropriately <input type="text" name="7-2"> before, during and after the point of sale'</p>
+                            <p><strong>Fill in the blanks of Data Protection Principle 3  </strong></p>
+                            <p>Personal data shall be <input type="text" name="7-1">, relevant and not <input type="text" name="7-2"> in relation to the purpose or purposes for which they are processed.</p>
                         </div>
                     </div>
                 </div>
@@ -319,21 +360,21 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">Question 8:</div>
                         <div class="panel-body">
-                            <p><strong>A customer raises a complaint with you. Do you:</strong></p>
+                            <p><strong>Personal data is defined as:</strong></p>
                             <ol>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="8-1" value="Tell them there is no point complaining because you have been through everything with them already and there are no other solutions"> Tell them there is no point complaining because you have been through everything with them already and there are no other solutions
+                                        <input type="checkbox" name="8-1" value="Data relating to a living individual who can be identified by that data"> Data relating to a living individual who can be identified by that data
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="8-2" value="Give them your regulator and Financial Ombudsman Service details"> Give them your regulator and Financial Ombudsman Service details
+                                        <input type="checkbox" name="8-2" value="Data relating to a living or deceased individual who can be identified by that data"> Data relating to a living or deceased individual who can be identified by that data
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="8-3" value="Provide them with your complaints procedure and full contact details"> Provide them with your complaints procedure and full contact details
+                                        <input type="checkbox" name="8-3" value="Data relating to a living individual who may or may not be identified by that data."> Data relating to a living individual who may or may not be identified by that data.
                                     </label>
                                 </li>
                             </ol>
@@ -346,21 +387,51 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">Question 9:</div>
                         <div class="panel-body">
-                            <p><strong>A customer asks who you are and what you do. Do you:</strong></p>
+                            <p><strong>The Information Commissioners Office can award compensation for breaches?</strong></p>
+                            <select name="9" class="form-control">
+                                <option value="Please select" selected>-- PLEASE SELECT --</option>
+                                <option value="True">True</option>
+                                <option value="False">False</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Question 10:</div>
+                        <div class="panel-body">
+                            <p><strong>Which of the following are 'sensitive' personal data? (pick one or more)</strong></p>
                             <ol>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="9-1" value="Provide them with your full name, company name and explain the nature of the business and the reason for your call "> Provide them with your full name, company name and explain the nature of the business and the reason for your call
+                                        <input type="checkbox" name="10-1" value="Name"> Name
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="9-2" value="Give them your first name and advise you will explain everything else as you go along"> Give them your first name and advise you will explain everything else as you go along
+                                        <input type="checkbox" name="10-2" value="Political views"> Political views
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="9-3" value="Advise that you cannot give them any details over the phone but after they have agreed to take your service you will send them everything they have requested in writing"> Advise that you cannot give them any details over the phone but after they have agreed to take your service you will send them everything they have requested in writing
+                                        <input type="checkbox" name="10-3" value="Ethnic origin"> Ethnic origin
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="10-4" value="Age"> Age
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="10-5" value="Gender"> Gender
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="10-6" value="Trade Union membership"> Trade Union membership
                                     </label>
                                 </li>
                             </ol>
@@ -371,14 +442,56 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="panel panel-default">
-                        <div class="panel-heading">Question 10:</div>
+                        <div class="panel-heading">Question 11:</div>
                         <div class="panel-body">
-                            <p><strong>TCF is not applicable to my role and/or organisation?</strong></p>
-                            <select name="10" class="form-control">
-                                <option value="please select" selected>-- PLEASE SELECT --</option>
+                            <p><strong>You can charge up to £10.00 for a Subject Access Request?</strong></p>
+                            <select class="form-control" name="11">
+                                <option value="Please Select" selected>-- PLEASE SELECT --</option>
                                 <option value="True">True</option>
                                 <option value="False">False</option>
                             </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Question 12:</div>
+                        <div class="panel-body">
+                            <p><strong>You are always legally obliged to release personal data to the police when requested?</strong></p>
+                            <select class="form-control" name="12">
+                                <option value="Please Select" selected>-- PLEASE SELECT --</option>
+                                <option value="True">True</option>
+                                <option value="False">False</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Question 13:</div>
+                        <div class="panel-body">
+                            <p><strong>The 4th Data Protection Principle requires that personal data is accurate, and where it is deemed to be inaccurate, the individual concerned has the right to:</strong></p>
+                            <ol>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="13-1" value="Apply for a court order to rectify, block, erase or destroy the information"> Apply for a court order to rectify, block, erase or destroy the information
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="13-2" value="Sue the company holding the data"> Sue the company holding the data
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="13-3" value="The individual has no rights in this instance"> The individual has no rights in this instance
+                                    </label>
+                                </li>
+                            </ol>
                         </div>
                     </div>
                 </div>

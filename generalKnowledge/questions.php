@@ -224,6 +224,9 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        label {display: block;}
+    </style>
 </head>
 <body>
 
@@ -407,7 +410,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">Question 7:</div>
                         <div class="panel-body">
-                            <p><strong>How ca you check a customers&#8216;s understanding of the credit agreement?</strong></p>
+                            <p><strong>How can you check a customers&#8216;s understanding of the credit agreement?</strong></p>
                             <ol>
                                 <li>
                                     <label>
@@ -481,7 +484,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">Question 10:</div>
                         <div class="panel-body">
-                            <p><strong>Can a customer settle their account?</strong></p>
+                            <p><strong>Can a customer settle their account early?</strong></p>
                             <select name="10" class="form-control">
                                 <option value="Please select" selected>-- Please Select --</option>
                                 <option value="No">No</option>
@@ -565,7 +568,7 @@
                             <ol>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="13-1" value=""> Earn as much as possible
+                                        <input type="checkbox" name="13-1" value="Earn as much as possible"> Earn as much as possible
                                     </label>
                                 </li>
                                 <li>
