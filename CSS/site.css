@@ -1,0 +1,13 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(../images/shutterstock_149841719_small.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
