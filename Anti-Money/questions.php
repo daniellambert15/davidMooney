@@ -12,14 +12,13 @@
     {
 
         // setup the email class, give it the users details.
-        $email = new email($_SESSION['name'], $_SESSION['email'], $_SESSION['contactNumber'], $_SESSION['address'], $_SESSION['company']);
-
+        $email = new email($_POST['name'], $_POST['email'], $_POST['contactNumber'], $_POST['address'], $_POST['company']);
 
         // Tell the form that its been submit.
         $completed = true;
 
         // its going to
-        $email->to = "fcacomplianceservices@gmail.com";
+        $email->to = "daniel.lambert15@gmail.com";
 
         // its coming from
         $email->from = "info@fcacomplianceservices.com";
@@ -213,7 +212,48 @@
             </div>
         <?php } ?>
 
-        <form action="questions.php" method="post">
+        <form action="questions.php" id="AML" name="AML" method="post">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Your Details</div>
+                        <div class="panel-body">
+                            <?php
+                                $error = (!isset($_REQUEST['name'])) ? true : false;
+                                $error = (!isset($_REQUEST['email'])) ? true : false;
+                                $error = (!isset($_REQUEST['contactNumber'])) ? true : false;
+                                $error = (!isset($_REQUEST['address'])) ? true : false;
+                                $error = (!isset($_REQUEST['company'])) ? true : false;
+
+                            if($error){
+                            ?>
+                            <div class="alert alert-danger" role="alert">If your details are not below, please re-type them.</div>
+                            <?php } ?>
+                            <div class="well col-xs-4">
+                                <label for="name">Name</label>
+                                <input required name="name" value="<?php echo $_SESSION['name']; ?>" class="form-control" type="text">
+                            </div>
+                            <div class="well col-xs-4">
+                                <label for="email">Email</label>
+                                <input required name="email" value="<?php echo $_SESSION['email']; ?>" class="form-control" type="email">
+                            </div>
+                            <div class="well col-xs-4">
+                                <label for="contactNumber">Contact Number</label>
+                                <input required name="contactNumber" value="<?php echo $_SESSION['contactNumber']; ?>" class="form-control" type="text">
+                            </div>
+                            <div class="well col-xs-4">
+                                <label for="address">Address</label>
+                                <input required name="address" value="<?php echo $_SESSION['address']; ?>" class="form-control" type="text">
+                            </div>
+                            <div class="well col-xs-4">
+                                <label for="company">Company</label>
+                                <input required name="company" value="<?php echo $_SESSION['company']; ?>" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-xs-12">
                     <div class="panel panel-default">
