@@ -19,7 +19,6 @@ require '../classes/email.php';
 
         // its going to
         $email->to = "fcacomplianceservices@gmail.com";
-        //$email->to = "daniel.lambert@gas-elec.co.uk";
 
         // its coming from
         $email->from = "info@fcacomplianceservices.com";
@@ -29,17 +28,17 @@ require '../classes/email.php';
 
         // build the email
         $emailContent = '
-        
+
         <ul>
             <li>Question: 1) Fill in the blanks on the below 2 definitions?</li>
             <li>Answer: </li>
             <li>\'Customers who are <strong>'.$_POST['1-1'].'</strong>, for whatever reason, to make an <strong>'.$_POST['1-2'].'</strong> decision at the time of dealing with them\'</li>
             <li>\'Customers whose <strong>'.$_POST['1-3'].'</strong> (financial, mental or physical) could be put at <strong>'.$_POST['1-4'].'</strong> through choosing the service or product you offer\'</li>
         </ul>
-        
+
         <ul>
             <li>Question: 2) Which of the below could be a sign of a customer’s vulnerability? (you can choose more than 1)</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['2-1'].'</li>
                      <li>'.$_POST['2-2'].'</li>
@@ -48,15 +47,15 @@ require '../classes/email.php';
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 3) The Mental Health Act is applicable to dealing with vulnerable customers?</li>
             <li>Answer: '.$_POST['3'].'</li>
         </ul>
-        
+
         <ul>
             <li>Question: 4) Vulnerable Customers goes hand in hand with?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['4-1'].'</li>
                      <li>'.$_POST['4-2'].'</li>
@@ -64,10 +63,10 @@ require '../classes/email.php';
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 5) Name 3 categories of vulnerable customers?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['5-1'].'</li>
                      <li>'.$_POST['5-2'].'</li>
@@ -75,25 +74,25 @@ require '../classes/email.php';
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 6) You should always terminate a call once you realise that a customer is vulnerable</li>
             <li>Answer: '.$_POST['6'].'</li>
         </ul>
-        
+
         <ul>
             <li>Question: 7) List 2 things that you could do to help a vulnerable customer?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['7-1'].'</li>
                      <li>'.$_POST['7-2'].'</li>
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 8) A customer mention to you that their Husband recently passed away. Do you:</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['8-1'].'</li>
                      <li>'.$_POST['8-2'].'</li>
@@ -101,15 +100,15 @@ require '../classes/email.php';
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 9) I don\'t speak to customers on the phone or face to face so learning about vulnerable customers is not applicable to me or my job role.</li>
             <li>Answer: '.$_POST['9'].'</li>
         </ul>
-        
+
         <ul>
             <li>Question: 10) The customer you have been speaking to has agreed to the product/service that you are offering but has displayed signs of being hard of hearing through the conversation.</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['10-1'].'</li>
                      <li>'.$_POST['10-2'].'</li>

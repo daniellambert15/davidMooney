@@ -20,8 +20,7 @@
 
         // its going to
         $email->to = "fcacomplianceservices@gmail.com";
-//        $email->to = 'daniel.lambert@gas-elec.co.uk';
-
+		
         // its coming from
         $email->from = "info@fcacomplianceservices.com";
 
@@ -30,10 +29,10 @@
 
         // build the email
         $emailContent = '
-        
+
         <ul>
             <li>Question: 1) What year was the Data Protection Act first created?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['1-1'].'</li>
                      <li>'.$_POST['1-2'].'</li>
@@ -41,10 +40,10 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 2) What is the person in charge of data in an organisation called?  </li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['2-1'].'</li>
                      <li>'.$_POST['2-2'].'</li>
@@ -52,15 +51,15 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 3) What do the following initials stand for?</li>
             <li>Answer: '.$_POST['3'].'</li>
         </ul>
-        
+
         <ul>
             <li>Question: 4) How many Data Protection principles are there?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['4-1'].'</li>
                      <li>'.$_POST['4-2'].'</li>
@@ -68,10 +67,10 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 5) Name 3 countries outside of EEA who have an adequate level of protection rating by ICO?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['5-1'].'</li>
                      <li>'.$_POST['5-2'].'</li>
@@ -79,10 +78,10 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 6) How many days do you have to respond to a Subject Access Request?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['6-1'].'</li>
                      <li>'.$_POST['6-2'].'</li>
@@ -90,17 +89,17 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 7) Fill in the blanks of Data Protection Principle 3</li>
             <li>Answer:
                 <p>Personal data shall be <strong>'.$_POST['7-1'].'</strong>, relevant and not <strong>'.$_POST['7-2'].'</strong> in relation to the purpose or purposes for which they are processed.</p>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 8) Personal data is defined as:</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['8-1'].'</li>
                      <li>'.$_POST['8-2'].'</li>
@@ -108,15 +107,15 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 9) The Information Commissioners Office can award compensation for breaches?</li>
             <li>Answer: '.$_POST['9'].'</li>
         </ul>
-        
+
         <ul>
             <li>Question: 10) Which of the following are \'sensitive\' personal data? (pick one or more)</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['10-1'].'</li>
                      <li>'.$_POST['10-2'].'</li>
@@ -127,20 +126,20 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 11) You can charge up to £10.00 for a Subject Access Request?</li>
             <li>Answer: '.$_POST['11'].'</li>
         </ul>
-        
+
         <ul>
             <li>Question: 12) You are always legally obliged to release personal data to the police when requested?</li>
             <li>Answer: '.$_POST['12'].'</li>
         </ul>
-        
+
         <ul>
             <li>Question: 13) The 4th Data Protection Principle requires that personal data is accurate, and where it is deemed to be inaccurate, the individual concerned has the right to:</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['13-1'].'</li>
                      <li>'.$_POST['13-2'].'</li>

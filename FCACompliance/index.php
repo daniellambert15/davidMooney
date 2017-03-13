@@ -68,7 +68,7 @@
       session_destroy();
       exit;
     }else{
-      header('Location: http://www.gas-elec.co.uk/HomeProjectFinance/index.php?id=15');
+      header('Location: http://www.google.com');
     }
   }
 

@@ -20,7 +20,6 @@
 
         // its going to
         $email->to = "fcacomplianceservices@gmail.com";
-        //$email->to = "daniel.lambert@gas-elec.co.uk";
 
         // its coming from
         $email->from = "info@fcacomplianceservices.com";
@@ -30,10 +29,10 @@
 
         // build the email
         $emailContent = '
-        
+
         <ul>
             <li>Question: 1) TCF is about</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['1-1'].'</li>
                      <li>'.$_POST['1-2'].'</li>
@@ -41,10 +40,10 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 2) How many desired outcomes are there for TCF</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['2-1'].'</li>
                      <li>'.$_POST['2-2'].'</li>
@@ -52,15 +51,15 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 3) Whose logo is this?</li>
             <li>Answer: '.$_POST['3'].'</li>
         </ul>
-        
+
         <ul>
             <li>Question: 4) TCF stands for?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['4-1'].'</li>
                      <li>'.$_POST['4-2'].'</li>
@@ -68,10 +67,10 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 5) Name 3 areas of your organisation where TCF should be applied</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['5-1'].'</li>
                      <li>'.$_POST['5-2'].'</li>
@@ -79,21 +78,21 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 6) TCF is the practical realisation of one of the FCA’s core principles:</li>
             <li>"A Firm must pay due regard to the interests of its customers and treat them fairly."</li>
             <li>Answer: '.$_POST['6'].'</li>
         </ul>
-        
+
         <ul>
             <li>Question: 7) Fill in the blanks of Treating Customers Fairly Outcome 3</li>
             <li>Answer: \'Consumers are provided with <strong>'.$_POST['7-1'].'</strong> information and kept appropriately <strong>'.$_POST['7-2'].'</strong> before, during and after the point of sale\'</li>
         </ul>
-        
+
         <ul>
             <li>Question: 8) A customer raises a complaint with you. Do you:</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['8-1'].'</li>
                      <li>'.$_POST['8-2'].'</li>
@@ -101,10 +100,10 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 9) A customer asks who you are and what you do. Do you:</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['9-1'].'</li>
                      <li>'.$_POST['9-2'].'</li>
@@ -112,7 +111,7 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 10) TCF is not applicable to my role and/or organisation?</li>
             <li>Answer: '.$_POST['10'].'</li>

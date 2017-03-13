@@ -33,7 +33,7 @@ class email
         $headers 	.=	"Reply-To: ".$this->from." <".$this->from.">" . "\r\n" .
             'X-Mailer: PHP/' . phpversion();
 
-        mail('daniel.lambert@gas-elec.co.uk', $this->title, $this->emailTemplate, $headers);
+        mail('daniel.lambert15@gmail.com', $this->title, $this->emailTemplate, $headers);
 
         if (mail($this->to, $this->title, $this->emailTemplate, $headers)) {
             return true;
