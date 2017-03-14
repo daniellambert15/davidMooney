@@ -347,8 +347,8 @@ class fcaIntroducer{
   {
     $array = array(
       'contentTitle' => 'You have Completed',
-      'content' => '<p>Thank you for completing our questionnaire. Please re type your email
-      and click the submit button. We\'ll then call you back asap.</p>',
+      'content' => '<p>Thank you for completing our course. Please re type your email
+      and click the continue button.</p>',
       'buttonPreviousText' => 'Previous',
       'urlPrevious' => '7',
       'formId' => '8',

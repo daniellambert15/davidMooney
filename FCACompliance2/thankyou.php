@@ -1,5 +1,5 @@
 <?php include 'head.php'; ?>
 		<div class="col-xs-12">
-			<p>Thank you for completing our questionnaire. A member of our staff will give you a call back shortly.</p>
+			<p>Thank you for completing our on-line training course.</p>
 		</div><!-- /.col -->
 <?php include 'footer.php'; ?>

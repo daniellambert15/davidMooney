@@ -215,7 +215,7 @@ class fcaIntroducer{
       <p>Our firm’s values are that we act fairly, ethically and openly at all times and make sure the loans are promoted, advertised and sold appropriately and we act within the law. For example, it is important that the customer understands who is providing the loan and your relationship and association with our firm.</p>
 
       <p>Every customer should fully understand their obligations and legal rights, and not be misled in any way or felt under pressure to take out a loan or make a decision to borrow quickly</p>
-      
+
       <p style="color: #f00">It is important that you understand and accept that you provide a “pure client introduction” and do not maintain a client relationship in relation to regulated financial activities. You are only required to provide a simple introduction and so you are likely to pass on contact details to our firm.</p>
 
       <p>Our firm takes the regulatory responsibility for the IAR and must ensure it meets FCA requirements. </p>
@@ -573,8 +573,8 @@ class fcaIntroducer{
   {
     $array = array(
       'contentTitle' => 'You have Completed',
-      'content' => '<p>Thank you for completing our questionnaire. Please re type your email
-      and click the submit button. We\'ll then call you back asap.</p>',
+      'content' => '<p>Thank you for completing our course. Please re type your email
+      and click the continue button.</p>',
       'buttonPreviousText' => 'Previous',
       'urlPrevious' => '14',
       'formId' => '15',

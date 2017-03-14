@@ -29,10 +29,10 @@
 
         // build the email
         $emailContent = '
-        
+
         <ul>
             <li>Question: 1) TCF is about?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['1-1'].'</li>
                      <li>'.$_POST['1-2'].'</li>
@@ -40,10 +40,10 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 2) How many desired outcomes are there for TCF?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['2-1'].'</li>
                      <li>'.$_POST['2-2'].'</li>
@@ -51,15 +51,15 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 3) Whose logo is this?</li>
             <li>Answer: '.$_POST['3'].'</li>
         </ul>
-        
+
         <ul>
             <li>Question: 4) What does the FCA do?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['4-1'].'</li>
                      <li>'.$_POST['4-2'].'</li>
@@ -69,10 +69,10 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 5) TCF stands for?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['5-1'].'</li>
                      <li>'.$_POST['5-2'].'</li>
@@ -80,10 +80,10 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 6) When does a customer make their first repayment?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['6-1'].'</li>
                      <li>'.$_POST['6-2'].'</li>
@@ -91,10 +91,10 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 7) How ca you check a customers\'s understanding of the credit agreement?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['7-1'].'</li>
                      <li>'.$_POST['7-2'].'</li>
@@ -102,15 +102,15 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 8) Can you offer these finance agreements to commercial customers?</li>
             <li>Answer: '.$_POST['8'].'</li>
         </ul>
-        
+
         <ul>
             <li>Question: 9) What is the withdrawal period and how long does it last?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['9-1'].'</li>
                      <li>'.$_POST['9-2'].'</li>
@@ -119,15 +119,15 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 10) Can a customer settle their account?</li>
             <li>Answer: '.$_POST['10'].'</li>
         </ul>
-        
+
         <ul>
             <li>Question: 11) Which of the following would be classed as a vulnerable customer?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['11-1'].'</li>
                      <li>'.$_POST['11-2'].'</li>
@@ -136,10 +136,10 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 12) What actions can you take if you identify a customer as vulnerable?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['12-1'].'</li>
                      <li>'.$_POST['12-2'].'</li>
@@ -148,10 +148,10 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 13) What do you believe your role/responsibilities to be? (From a customer perspective)?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['13-1'].'</li>
                      <li>'.$_POST['13-2'].'</li>
@@ -161,10 +161,10 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 14) What is it important notes must you always remember?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['14-1'].'</li>
                      <li>'.$_POST['14-2'].'</li>
@@ -172,10 +172,10 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 15) A customers raises a complaint with you. Do you:</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['15-1'].'</li>
                      <li>'.$_POST['15-2'].'</li>
@@ -183,10 +183,10 @@
                 </ol>
             </li>
         </ul>
-        
+
         <ul>
             <li>Question: 16) A customer asks who you are and what you do. Do you?</li>
-            <li>Answer: 
+            <li>Answer:
                 <ol>
                      <li>'.$_POST['16-1'].'</li>
                      <li>'.$_POST['16-2'].'</li>
@@ -230,7 +230,25 @@
 </head>
 <body>
 
-    <div class="container">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="http://fcacomplianceservices.com/">FCA Compliance Services</a>
+	    </div>
+	    <div id="navbar" class="collapse navbar-collapse">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="http://fcacomplianceservices.com/">Home</a></li>
+	      </ul>
+	    </div><!--/.nav-collapse -->
+	  </div>
+	</nav>
+	<div class="container" style="margin-top: 50px;">
         <div class="row">
             <div class="col-xs-12">
                 <h2>General Knowledge Assessment</h2>
